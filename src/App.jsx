@@ -7,13 +7,16 @@ function App(){
   return(
     <>
     <BrowserRouter>
-      <AppRoutes/>
-      <Navbar/>
-      <Footer/>
+      <div className="app-shell">
+        <Navbar />
+        <main className="page-content">
+          <AppRoutes />
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
