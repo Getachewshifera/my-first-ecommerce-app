@@ -1,9 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import products from "../pages/Products";
-import checkout from "../pages/Checkout";
-import productsDetails from "../pages/ProductsDetails";
-
+import { Routes, Route } from 'react-router-dom';
+import Home from '../pages/Home';
+import Products from '../pages/Products';
+import Checkout from '../pages/Checkout';
+import ProductsDetails from '../pages/ProductsDetails';
 
 const AppRoutes = () => {
   return (
@@ -12,10 +11,8 @@ const AppRoutes = () => {
       <Route path="/products" element={<Products />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/products/:id" element={<ProductsDetails />} />
-
-
     </Routes>
   );
-}
+};
 
 export default AppRoutes;
